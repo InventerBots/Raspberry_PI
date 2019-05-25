@@ -6,7 +6,7 @@ LED_2 = 21
 LED_3 = 22
 
 GPIO.setmode(GPIO.BCM)
-GPIO.setwarnings(false)
+GPIO.setwarnings(False)
 GPIO.setup(LED_1, GPIO.OUT)
 GPIO.setup(LED_2, GPIO.OUT)
 GPIO.setup(LED_3, GPIO.OUT)
