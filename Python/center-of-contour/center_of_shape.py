@@ -3,7 +3,7 @@
 
 # import the necessary packages
 import argparse
-import imutils
+import Imutils
 import cv2
 
 # construct the argument parse and parse the arguments
