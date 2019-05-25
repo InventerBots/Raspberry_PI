@@ -12,14 +12,14 @@ GPIO.setup(LED_2, GPIO.OUT)
 GPIO.setup(LED_3, GPIO.OUT)
 
 while True:
-	GPIO.output(LED_1, High)
+	GPIO.output(LED_1, 1)
 	time.sleep(1)
-	GPIO.output(LED_1, LOW)
+	GPIO.output(LED_1, 0)
 
-	GPIO.output(LED_2, HIGH)
+	GPIO.output(LED_2, 1)
 	time.sleep(1)
-	GPIO.output(LED_2, LOW)
+	GPIO.output(LED_2, 0)
 
-	GPIO.output(LED_3, HIGH)
+	GPIO.output(LED_3, 1)
 	time.sleep(1)
-	GPIO.output(LED_3, LOW)
+	GPIO.output(LED_3, 0)
