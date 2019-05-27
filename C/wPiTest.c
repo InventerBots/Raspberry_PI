@@ -13,10 +13,10 @@ int main(void) {
         while(1) {
                 digitalWrite(LedPin, LOW);   //led on
                 printf("led on\n");
-                delay(1000);			     // wait 1 sec
+                delay(100);			     // wait 1 sec
                 digitalWrite(LedPin, HIGH);  //led off
                 printf("led off\n");
-                delay(1000);                 // wait 1 sec
+                delay(100);                 // wait 1 sec
         }
         return 0;
 }
