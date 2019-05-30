@@ -9,7 +9,7 @@ int main () {
     pinMode (PWM_IN, INPUT);
     pinMode (BUTTON, INPUT);
 
-    while(true){
+    while(1){
         if(digitalRead(BUTTON == 1))
             printf("button is pressed\n");
         else
