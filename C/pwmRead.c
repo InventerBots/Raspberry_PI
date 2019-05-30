@@ -4,8 +4,8 @@
 #define PWM_IN 18
 #define BUTTON 6
 
-void main () {
-    wiringPiSetupGpio (void);
+int main () {
+    wiringPiSetupGpio ();
     pinMode (PWM_IN, INPUT);
     pinMode (BUTTON, INPUT);
 
