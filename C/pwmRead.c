@@ -10,9 +10,11 @@ int main () {
     pinMode (BUTTON, INPUT);
 
     while(1){
-        if(digitalRead(BUTTON == 1))
+        if(digitalRead(BUTTON == 0)){
+            putchar('\f');
             printf("button is pressed\n");
-        else
-            printf("button is not pressed\n");
+        }
+        //else
+          //  printf("button is not pressed\n");
     }
 }
