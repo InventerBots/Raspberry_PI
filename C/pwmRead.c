@@ -14,7 +14,9 @@ int main () {
             putchar('\f');
             printf("button is pressed\n");
         }
-        //else
-          //  printf("button is not pressed\n");
+        else {
+            putchar('\f');
+            printf("button is not pressed\n");
+        }
     }
 }
