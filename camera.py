@@ -8,7 +8,7 @@ camera = picamera.PiCamera()
 gpio.setmode(gpio.BOARD)
 gpio.setup(triger,  gpio.IN, pull_up_down=gpio.PUD_DOWN)
 
-camera.resolution = (800, 600)
+camera.resolution = (400, 200)
 camera.start_preview()
 while True:
     if gpio.input(triger)==True:
