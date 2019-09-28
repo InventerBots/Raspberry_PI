@@ -1,7 +1,20 @@
 import picamera
+import RPi.GPIO as gpio
+from time import sleep
+
+triger=16
+img_num=0
 camera = picamera.PiCamera()
+gpio.setmode(gpio.BOARD)
+gpio.setup(triger,  gpio.IN, pull_up_down=gpio.PUD_DOWN)
+
 camera.resolution = (800, 600)
 camera.start_preview()
-sleep(5)
-camera.capture(‘snapshot.jpg’, resize=(640, 480))
+while True:
+    if gpio.input(triger)==True:
+        print("True, %s" % img_num)
+        camera.capture('snapshot%s.jpeg' % img_num, resize=(720,480))
+        img_num+=1
+        sleep(0.5)
 camera.stop_preview()
+    
