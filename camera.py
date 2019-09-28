@@ -9,7 +9,7 @@ gpio.setmode(gpio.BOARD)
 gpio.setup(triger,  gpio.IN, pull_up_down=gpio.PUD_DOWN)
 
 camera.resolution = (200, 200)
-camera.start_preview()
+##camera.start_preview()
 while True:
     if gpio.input(triger)==True:
         print("True, %s" % img_num)
