@@ -14,8 +14,8 @@ gpio.setup(kill, gpio.IN, pull_up_down=gpio.PUD_DOWN)
 camera.resolution = (150, 100)
 camera.start_preview()
 while True:
-	if gpio.input(kill)==True:
-		break
+##	if gpio.input(kill)==True:
+##		break
     if gpio.input(triger)==True:
         print("True, %s" % img_num)
         camera.capture('snapshot%s.jpeg' % img_num, resize=(720,480))
