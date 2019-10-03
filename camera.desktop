@@ -1,0 +1,4 @@
+[Desktop Entry]
+Type=Application
+Name=Blank
+Exec=/usr/bin/python3 /home/pi/Documents/Raspberry_Pi/camera.py
